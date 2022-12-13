@@ -6,12 +6,14 @@ function App() {
   const studentData = [
     {
       nameData: "Ada",
+      emailData: "ada@dev.org",
     },
     {
       nameData: "Soo-ah",
       emailData: "sooah@dev.org",
     },
     {
+      nameData: "Chrissy",
       emailData: "chrissy@dev.org",
     },
   ];
