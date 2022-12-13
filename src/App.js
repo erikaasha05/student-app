@@ -3,11 +3,24 @@ import StudentList from "./components/StudentList";
 import ClassInfo from "./components/ClassInfo";
 
 function App() {
+  const studentData = [
+    {
+      nameData: "Ada",
+    },
+    {
+      nameData: "Soo-ah",
+      emailData: "sooah@dev.org",
+    },
+    {
+      emailData: "chrissy@dev.org",
+    },
+  ];
+
   return (
     <main>
       <h1>Attendance</h1>
-      <ClassInfo></ClassInfo>
-      <StudentList></StudentList>
+      <ClassInfo memberCount={studentData.length}></ClassInfo>
+      <StudentList students={studentData}></StudentList>
     </main>
   );
 }
